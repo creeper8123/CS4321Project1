@@ -37,7 +37,7 @@ void insertionSort(int array[], int n){
             j--;
         }
 
-        arr[j + 1] = key;
+        array[j + 1] = key;
     }
 }
 
