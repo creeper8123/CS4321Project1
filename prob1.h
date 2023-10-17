@@ -1,5 +1,5 @@
-#include <stdbool.h>
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
 
-bool uniqueElementAlg(int* array, int arraySize);
+int uniqueElementAlg(int* array, int arraySize);
+int const NUM_OF_ITERATIONS = 1000;
