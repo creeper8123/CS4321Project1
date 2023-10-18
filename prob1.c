@@ -17,7 +17,7 @@ int main(int argc, char** argv){
     }
 
     //Add header
-    fprintf(file, "Iteration Number,n=10,n=20,n=30,n=40,n=50,n=60,n=70,n=80,n=90,n=100\n");
+    fprintf(file, "Iteration Number,n=10,n=20,n=30,n=40,n=50,n=60,n=70,n=80,n=90,n=100,\n");
 
     //Calculate important values
     int upper = 16000;
