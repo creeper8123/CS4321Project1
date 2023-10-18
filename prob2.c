@@ -1,6 +1,4 @@
-
 #include "prob2.h"
-
 // Collin - Insurtion
 // Jon - Bubble
 
