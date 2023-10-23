@@ -98,9 +98,9 @@ void insertionSort(int array[], int n){
 
 void bubbleSort(int size[], int m){
     int index;
-    for(int i = 0; i < m -2; i++){
+    for(int i = 0; i < m-1; i++){
 
-        for (int j = 0; j< m-2-1; j++ ){
+        for (int j = 0; j< m-2; j++ ){
             index = size[j];
 
             if (size[j+1]<size[j]){
