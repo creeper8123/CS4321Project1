@@ -9,8 +9,7 @@ int main(int argc, char** argv){
     int* array = malloc(sizeof(int) * n);
     int teamNumber = 16;
 
-    for(int i = 0; i < n; i++)
-{
+
     clock_t start, end;
     // Testing algorithm1
     start = clock();
@@ -18,15 +17,14 @@ int main(int argc, char** argv){
     end = clock();
     double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg1, array[i]);
+    time_taken_alg1, n);
     // Testing algorithm2
     start = clock();
     bubbleSort(array, n);
     end = clock();
     double time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Bubble sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg2, array[i]);
-}
+    time_taken_alg2, n);
 
     for(int i = 0; i < n; i++){
         array[i] = rand() * teamNumber;
