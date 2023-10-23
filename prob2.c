@@ -9,7 +9,7 @@ int main(int argc, char** argv){
     int* array = malloc(sizeof(int) * n);
     int teamNumber = 16;
 
-    for(int i = 0; i < (int) (sizeof(array) / sizeof(int)); i++)
+    for(int i = 0; i < n; i++)
 {
     clock_t start, end;
     // Testing algorithm1
