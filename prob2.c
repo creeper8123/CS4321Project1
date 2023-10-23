@@ -49,14 +49,9 @@ int main(int argc, char** argv){
     //#####################
     //INERTION HERE
     //fprintf(file, "%d,", timeForInsertion));
-    for(int i = 0; i< n; i++){
-       fprintf(file, "%d,", timeForInsertion); 
-    }
     //BUBBLE HERE
     //fprintf(file, "%d,", timeForBubble);
-        for(int i = 0; i< n; i++){
-       fprintf(file, "%d,", timeForBubble);
-    }
+
     //####################
 
     //END LOOP HERE
@@ -88,11 +83,12 @@ void insertionSort(int array[], int n){
 }
 
 void bubbleSort(int size[], int m){
-    int x;
     int index;
     for(int i = 0; i < m -2, i++){
-        for (int j = 0; n-2-1 ){
+
+        for (int j = 0; m-2-1 ){
             index = size[j];
+
             if (size[j+1]<size[j]){
                 size[j] = size[j+1];
                 size[j+1] = index;
