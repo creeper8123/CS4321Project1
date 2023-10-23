@@ -9,7 +9,6 @@ int main(int argc, char** argv){
     int* array1 = malloc(sizeof(int) * n);
     int* array2 = malloc(sizeof(int) * (n*10));
     int* array3 = malloc(sizeof(int) * (n* 100));
-    int teamNumber = 16;
 
     for(int i = 0; i < n; i++){
         array1[i] = (rand() % 500);
@@ -131,8 +130,9 @@ int main(int argc, char** argv){
     
     //Clean up
     fclose(file);
-    free(array);
-
+    free(array1);
+    free(array2);
+    free(array3);
     return 0;
 
 }
