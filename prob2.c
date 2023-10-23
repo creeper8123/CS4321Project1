@@ -45,15 +45,15 @@ int main(int argc, char** argv){
     time_taken_alg1, n*100);
 
     for(int i = 0; i<n; i++){
-        printf(" %d\n ", array1[i]);
+        printf("%d\n", array1[i]);
     }
 
     for(int i = 0; i<(n*10); i++){
-        printf(" %d\n ", array2[i]);
+        printf("%d\n", array2[i]);
     }
 
     for(int i = 0; i<(n*100); i++){
-        printf(" %d\n ", array3[i]);
+        printf("%d\n", array3[i]);
     }
 
 
@@ -94,15 +94,15 @@ int main(int argc, char** argv){
     time_taken_alg1, n*100);
 
     for(int i = 0; i<n; i++){
-        printf(" %d\n ", array1[i]);
+        printf("%d\n", array1[i]);
     }
 
     for(int i = 0; i<(n*10); i++){
-        printf(" %d\n ", array2[i]);
+        printf("%d\n", array2[i]);
     }
 
     for(int i = 0; i<(n*100); i++){
-        printf(" %d\n ", array3[i]);
+        printf("%d\n", array3[i]);
     }
     //Create file
     FILE* file = fopen("prob2out.csv", "w");
