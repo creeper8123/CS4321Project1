@@ -1,6 +1,6 @@
 #include "prob2.h"
 // Collin - Insurtion
-// Jon - Bubble
+// John - Bubble
 
 
 int main(int argc, char** argv){
@@ -30,6 +30,7 @@ int main(int argc, char** argv){
     //#####################
     //INERTION HERE
     //fprintf(file, "%d,", timeForInsertion);
+    
     //BUBBLE HERE
     //fprintf(file, "%d,", timeForBubble);
     //####################
@@ -63,8 +64,18 @@ void insertionSort(int array[], int n){
 }
 
 void bubbleSort(int size[], int m){
-    int j;
-    
+    int x;
+    int index;
+    for(int i = 0; i < m -2, i++){
+        for (int j = 0; n-2-1 ){
+            index = size[j];
+            if (size[j+1]<size[j]){
+                size[j] = size[j+1];
+                size[j+1] = index;
+            }
+        }
+
+    }
 
 }
 
