@@ -11,15 +11,15 @@ int main(int argc, char** argv){
     int* array3 = malloc(sizeof(int) * (n* 100));
 
     for(int i = 0; i < n; i++){
-        array1[i] = (rand() % 500);
+        array1[i] = (rand() % 500) + 1;
     }
 
     for(int i = 0; i < n; i++){
-        array2[i] = (rand() % 5000);
+        array2[i] = (rand() % 5000)+ 1;
     }
 
     for(int i = 0; i < n; i++){
-        array3[i] = (rand() % 50000);
+        array3[i] = (rand() % 50000)+ 1;
     }
     clock_t start, end;
     // Testing algorithm1
@@ -60,15 +60,15 @@ int main(int argc, char** argv){
 
 
     for(int i = 0; i < n; i++){
-        array1[i] = (rand() % 500);
+        array1[i] = (rand() % 500)+ 1;
     }
 
     for(int i = 0; i < n; i++){
-        array2[i] = (rand() % 5000);
+        array2[i] = (rand() % 5000)+ 1;
     }
 
     for(int i = 0; i < n; i++){
-        array3[i] = (rand() % 50000);
+        array3[i] = (rand() % 50000)+ 1;
     }
 
     // Testing algorithm2
