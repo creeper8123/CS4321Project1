@@ -75,23 +75,23 @@ int main(int argc, char** argv){
        start = clock();
     bubbleSort(array1, n);
     end = clock();
-    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    double time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg1, n);
+    time_taken_alg2, n);
 
     start = clock();
     bubbleSort(array2, n*10);
     end = clock();
-    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg1, n*10);
+    time_taken_alg2, n*10);
 
     start = clock();
     bubbleSort(array3, n*100);
     end = clock();
-    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg1, n*100);
+    time_taken_alg2, n*100);
 
     for(int i = 0; i<n; i++){
         printf("%d\n", array1[i]);
@@ -127,7 +127,18 @@ int main(int argc, char** argv){
     //####################
 
     //END LOOP HERE
-    
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n);
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*10);
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*100);
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg2, n);
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg2, n*10);
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg2, n*100);
     //Clean up
     fclose(file);
     free(array1);
