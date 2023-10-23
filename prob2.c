@@ -5,7 +5,7 @@
 
 int main(int argc, char** argv){
 
-    int n = 10;
+    int n = 100;
     int* array = malloc(sizeof(int) * n);
     int teamNumber = 16;
 
