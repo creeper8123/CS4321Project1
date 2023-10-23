@@ -5,8 +5,10 @@
 
 int main(int argc, char** argv){
 
-    int n = 100;
-    int* array = malloc(sizeof(int) * n);
+    int n = 1000;
+    int* array1 = malloc(sizeof(int) * n);
+    int* array2 = malloc(sizeof(int) * (n*10));
+    int* array3 = malloc(sizeof(int) * (n* 100));
     int teamNumber = 16;
 
     for(int i = 0; i < n; i++){
@@ -17,14 +19,36 @@ int main(int argc, char** argv){
     clock_t start, end;
     // Testing algorithm1
     start = clock();
-    insertionSort(array, n);
+    insertionSort(array1, n);
     end = clock();
     double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n);
 
+    start = clock();
+    insertionSort(array2, n*10);
+    end = clock();
+    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*10);
+
+    start = clock();
+    insertionSort(array3, n*100);
+    end = clock();
+    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*100);
+
     for(int i = 0; i<n; i++){
-        printf(" %d\n ", array[i]);
+        printf(" %d\n ", array1[i]);
+    }
+
+    for(int i = 0; i<(n*10); i++){
+        printf(" %d\n ", array2[i]);
+    }
+
+    for(int i = 0; i<(n*100); i++){
+        printf(" %d\n ", array3[i]);
     }
 
     for(int i = 0; i < n; i++){
@@ -34,17 +58,38 @@ int main(int argc, char** argv){
 
 
     // Testing algorithm2
-    start = clock();
-    bubbleSort(array, n);
+       start = clock();
+    bubbleSort(array1, n);
     end = clock();
-    double time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
-    printf("Bubble sort runs in: %.8lf seconds for n = %d\n",
-    time_taken_alg2, n);
+    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n);
+
+    start = clock();
+    bubbleSort(array2, n*10);
+    end = clock();
+    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*10);
+
+    start = clock();
+    bubbleSort(array3, n*100);
+    end = clock();
+    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
+    time_taken_alg1, n*100);
 
     for(int i = 0; i<n; i++){
-        printf(" %d\n ", array[i]);
+        printf(" %d\n ", array1[i]);
     }
 
+    for(int i = 0; i<(n*10); i++){
+        printf(" %d\n ", array2[i]);
+    }
+
+    for(int i = 0; i<(n*100); i++){
+        printf(" %d\n ", array3[i]);
+    }
     //Create file
     FILE* file = fopen("prob2out.csv", "w");
 
