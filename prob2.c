@@ -9,19 +9,19 @@ int main(int argc, char** argv){
     int* array = malloc(sizeof(int) * n);
     int teamNumber = 16;
 
-    for(int i = 0; i < (sizeof(N) / sizeof(int)); i++)
+    for(int i = 0; i < (sizeof(array) / sizeof(int)); i++)
 {
     clock_t start, end;
     // Testing algorithm1
     start = clock();
-    insertionSort(array[i], n);
+    insertionSort(array, n);
     end = clock();
     double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, array[i]);
     // Testing algorithm2
     start = clock();
-    bubbleSort(array[i], n);
+    bubbleSort(array, n);
     end = clock();
     double time_taken_alg2 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Bubble sort runs in: %.8lf seconds for n = %d\n",
