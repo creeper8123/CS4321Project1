@@ -10,7 +10,7 @@ int main(int argc, char** argv){
     int teamNumber = 16;
 
     for(int i = 0; i < n; i++){
-        array[i] = rand() * teamNumber;
+        array[i] = (rand() % 100000) * teamNumber;
     }
 
 
@@ -24,11 +24,11 @@ int main(int argc, char** argv){
     time_taken_alg1, n);
 
     for(int i = 0; i<n; i++){
-        printf(" %d ", array[i]);
+        printf(" %d\n ", array[i]);
     }
 
     for(int i = 0; i < n; i++){
-        array[i] = rand() * teamNumber;
+        array[i] = (rand() % 100000)  * teamNumber;
     }
 
 
@@ -42,7 +42,7 @@ int main(int argc, char** argv){
     time_taken_alg2, n);
 
     for(int i = 0; i<n; i++){
-        printf(" %d ", array[i]);
+        printf(" %d\n ", array[i]);
     }
 
     //Create file
