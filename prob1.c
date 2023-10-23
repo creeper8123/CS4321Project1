@@ -9,17 +9,16 @@
 
 int main(int argc, char** argv){
 
-    if(argc > 1){ //Running test cases
+    //Check if the program is running tests or actual data
+    if(argc > 1){
         runTestCases();
         exit(0);
     }
 
-    //Not running test cases
-
-    //Calculate important values
-    int upper = 16000;
-    int lower = 1600;
-    int* array = malloc(sizeof(int) * upper);
+    //Declare important values
+    int upper = 16000; //16 * 10000
+    int lower = 1600; //16 * 1000
+    int* array = malloc(sizeof(int) * upper); //Declare a single array for use, the range to be used is specified
 
 
 
@@ -46,13 +45,15 @@ int main(int argc, char** argv){
 
             //Fill array with new values
             for (int k = 0; k < j; k++){
-                array[k] = (rand() % (upper - lower + 1)) + lower;
+                array[k] = rand() % lower;
             }
 
             //Add data to file
             int matchFound = 0;
             fprintf(file, "%d,", uniqueElementAlg(array, j, &matchFound));
         }
+
+        //Add newline to the end of the row
         fprintf(file, "\n");
     }
 
@@ -85,13 +86,15 @@ int main(int argc, char** argv){
 
             //Fill array with new values
             for (int k = 0; k < j; k++){
-                array[k] = (rand() % (upper - lower + 1)) + lower;
+                array[k] = rand() % upper;
             }
 
             //Add data to file
             int matchFound = 0;
             fprintf(file, "%d,", uniqueElementAlg(array, j, &matchFound));
         }
+
+        //Add newline to the row
         fprintf(file, "\n");
     }
     
