@@ -9,7 +9,7 @@ int main(int argc, char** argv){
     int* array = malloc(sizeof(int) * n);
     int teamNumber = 16;
 
-    for(int i = 0; i < (sizeof(array) / sizeof(int)); i++)
+    for(int i = 0; i < (int) (sizeof(array) / sizeof(int)); i++)
 {
     clock_t start, end;
     // Testing algorithm1
@@ -84,9 +84,9 @@ void insertionSort(int array[], int n){
 
 void bubbleSort(int size[], int m){
     int index;
-    for(int i = 0; i < m -2, i++){
+    for(int i = 0; i < m -2; i++){
 
-        for (int j = 0; m-2-1 ){
+        for (int j = 0; j< m-2-1; j++ ){
             index = size[j];
 
             if (size[j+1]<size[j]){
