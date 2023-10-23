@@ -12,10 +12,16 @@ int main(int argc, char** argv){
     int teamNumber = 16;
 
     for(int i = 0; i < n; i++){
-        array[i] = (rand() % 100000) * teamNumber;
+        array1[i] = (rand() % 500);
     }
 
+    for(int i = 0; i < n; i++){
+        array2[i] = (rand() % 5000);
+    }
 
+    for(int i = 0; i < n; i++){
+        array3[i] = (rand() % 50000);
+    }
     clock_t start, end;
     // Testing algorithm1
     start = clock();
@@ -28,14 +34,14 @@ int main(int argc, char** argv){
     start = clock();
     insertionSort(array2, n*10);
     end = clock();
-    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n*10);
 
     start = clock();
     insertionSort(array3, n*100);
     end = clock();
-    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n*100);
 
@@ -51,31 +57,40 @@ int main(int argc, char** argv){
         printf(" %d\n ", array3[i]);
     }
 
+
+
+
     for(int i = 0; i < n; i++){
-        array[i] = (rand() % 100000)  * teamNumber;
+        array1[i] = (rand() % 500);
     }
 
+    for(int i = 0; i < n; i++){
+        array2[i] = (rand() % 5000);
+    }
 
+    for(int i = 0; i < n; i++){
+        array3[i] = (rand() % 50000);
+    }
 
     // Testing algorithm2
        start = clock();
     bubbleSort(array1, n);
     end = clock();
-    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n);
 
     start = clock();
     bubbleSort(array2, n*10);
     end = clock();
-    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n*10);
 
     start = clock();
     bubbleSort(array3, n*100);
     end = clock();
-    double time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
+    time_taken_alg1 = ((double)end - start) / CLOCKS_PER_SEC;
     printf("Insertion sort runs in: %.8lf seconds for n = %d\n",
     time_taken_alg1, n*100);
 
