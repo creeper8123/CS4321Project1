@@ -109,7 +109,7 @@ int main(int argc, char** argv){
 
     //------------------UPPER M (16000)-----------
     //Create a file to store all the data in a ready to use formal
-    FILE* file = fopen("prob1outLower.csv", "w");
+    file = fopen("prob1outUpper.csv", "w");
 
     //If the file does not exist, exit the program
     if(file == NULL){
