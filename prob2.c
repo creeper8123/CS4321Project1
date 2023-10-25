@@ -1,9 +1,45 @@
 #include "prob2.h"
-// Collin - Insurtion
-// John - Bubble
+// Collin - Insertion
+// Johnathan - Bubble
 
 
 int main(int argc, char** argv){
+/* MAIN CLASS DOCUMENTATION
+1.) There are two algorithims being used and they are insertionSort and bubbleSort.
+2.) The people who worked on algorithims are Collin and Johnathan.
+3.) We finished this program by 10-23.
+4.) You run the program by typing in ./prob2 in the command line or in terminal
+*/
+
+/* INPUT CASES DOCUMENTATION
+1.) The input type is integers (int)
+2.)The Authors of these input cases is Collin and Johnathan.  (Most of it was Collin as Johnathan had help from him when making
+these test cases.)
+3.)Insertion Sort:
+    for(i from 1 to n){
+        key = A[i]
+        j = i-1;
+        while (j>=0 &&A[j] > key){
+            swap(A[j],A[j+1]);
+            j= j-1 ;
+        }
+        A[j+1] = key;
+} 
+
+
+Bubble Sort:
+for( i from 0 to m - 1){
+	for(j from 0 to m - i - 1){
+		Index = A[j]
+		if(A[j+1] < A[j]){
+		    swap(A[j],A[j+1]);
+        }   
+    }
+}
+
+4.) You run these input cases by typing ./prob2 as we have implmented the input cases
+*/
+
 
     int n = 1000;
     int* array1 = malloc(sizeof(int) * n);
@@ -133,7 +169,13 @@ int main(int argc, char** argv){
 
 
 void insertionSort(int array[], int n){
-
+/*
+1.) Collin worked on this part of the program. 
+2.) The cost of this method is O(n^2).
+3.) How this function works is that you compare the numbers starting from the index and check to see if the values in the array 
+are smaller or greater than the current index.  If it is bigger we keep the number where it is, but if it is smaller
+we move the current number after the number we just compared with.  
+*/
     int j;
     int key;
     for (int i = 1; i < n; i++) {
@@ -151,6 +193,14 @@ void insertionSort(int array[], int n){
 }
 
 void bubbleSort(int size[], int m){
+    /*
+    1.) Johnathan worked on this function
+    2.) The cost of this method is O(n^2).
+    3.) How this function works is use for loops to compare elements in an array so we can find the largest number first.  
+    It starts at the beginning of the array and then compares the first two numbers to see which one is biggee.  
+    The bigger number will be compared with the next number in the array and it repeats this until we get our largest number 
+    to the end.  
+    */
     int index;
     for(int i = 0; i < m-1; i++){
 
