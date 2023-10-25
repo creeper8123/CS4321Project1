@@ -29,6 +29,30 @@ Description:
     The entire above process is repeated for the upper m value, and the results are stored in prob1outUpper.csv.
 */
 int main(int argc, char** argv){
+    /* DOCUMETING MAIN CLASS    
+    1.) The name of the algorithim is called Brute Force
+    2.)Anthony worked on this part, his teammates are Collin, Rohith, and Johnathan
+    3.)We finished this by 10-23
+    4.) You run this program by inputing ./prob1 in the command terminal.     
+    */
+
+    /* DOCUMENTING INPUT CASES
+    1.)The input type is int 
+    2.)The Author of these input cases is Anthony
+    3.)Pseudo Code
+        Brute Force:
+            for(i from 0 to n-2){ //if n-1, would compare with itself
+		        for(j from i+1 to n-1){
+			        if(A[i] == A[j]){
+				        return false;
+			}
+		}
+	}
+	return true;
+    4.)You run this program by inputing .prob1 in the command terminal as we have test cases implemented in the code.
+    */
+
+
 
     //Check if the program is running tests or actual data
     if(argc > 1){
