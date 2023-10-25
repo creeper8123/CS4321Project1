@@ -9,7 +9,8 @@
 /*
 Author: Anthony Martin
 
-Cost: O(n^4)
+Cost: O(n^2 * 1000 * 10)
+The setup code is run 1000 times, there are 10 different array sizes for each loop, and the unique element alg has O(n^2)
 
 Param (int argc): The number of arguments (including the program itself). Any additional arguemnts will run test cases instead.
 Param (char** argv): The arguments passed to the program (the first argument is the name of the binary)
